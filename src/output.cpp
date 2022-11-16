@@ -3,7 +3,7 @@
 using std::endl;
 
 void Output::printInstructions() {
-  cout << "Usage: dna_profiler -d <database_file> -s <dna_sequence_file>\n "
+  cout << "Usage: bin/dna_profiler -d <database_file> -s <dna_sequence_file>\n "
           "Where the arguments are:\n\t<database_file>\tThe DNA database "
           "file\n\t<dna_sequence_file>\tThe DNA sequence file you wish to "
           "identify (find a match for)."
@@ -33,9 +33,9 @@ void Output::printReadingFiles(char *database, char *inputDna) {
 }
 
 void Output::printReadError(char *file) {
-  cout << "================================================\n[X] ERROR: File ["
+  cout << "================================================\n[X] ERROR: No data found in file ["
        << file
-       << "] not found.\n================================================"
+       << "].\n================================================"
        << endl
        << endl;
 }
