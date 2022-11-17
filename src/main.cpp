@@ -180,6 +180,7 @@ int main(int argc, char *argv[]) {
   // profile that was generated in inputDna.
   for (int ii = 0; ii < database.size(); ii++) {
     bool found = 0;
+		
     // database[ii].findProfile() returns a bool that indicates success or
     // failure. It searches the database for a match between the profile at
     // position "ii" of database and the one in "inputDna".
