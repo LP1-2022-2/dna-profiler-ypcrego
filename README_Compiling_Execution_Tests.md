@@ -46,7 +46,8 @@ bin/dna_profiler -d data/data.csv
 ```
 
 ## 3.3 Examples of executions using valgrind:
-```valgrind -v --leak-check=full --show-reachable=yes bin/dna_profiler -d data/data.csv -s data/sequence_alice.txt
+```
+valgrind -v --leak-check=full --show-reachable=yes bin/dna_profiler -d data/data.csv -s data/sequence_alice.txt
 valgrind -v --leak-check=full --show-reachable=yes bin/dna_profiler -d data/data.csv -s data/sequence_charlie.txt
 ```
 
@@ -56,20 +57,20 @@ Here, you will find instructions for producing certain results.
 ## 4.1 Successful searches
 
 To produce a successful search, i.e, a search that results in a match, follow the instructions:
-	- Set -d to "data/data.csv".
-	- Set -s to any of the .txt files inside "data/" that start with "sequence_" and are followed by a given name.
-		- For instance, the following file(s) should always result in the expected output:
-			- "data/sequence_alice.txt"
-	 		- "data/sequence_bob.txt"
-			- "data/sequence_charlie.txt"
+	* Set -d to "data/data.csv".
+	* Set -s to any of the .txt files inside "data/" that start with "sequence_" and are followed by a given name.
+		* For instance, the following file(s) should always result in the expected output:
+			* "data/sequence_alice.txt"
+	 		* "data/sequence_bob.txt"
+			* "data/sequence_charlie.txt"
 
 
 ## 4.2 "No matches" searches
 
 To produce a syntax-correct non-matching search, follow the instructions:
-	- Set -s to any string-filled .txt file that doesn't follow a successful match naming pattern.
-		- For instance, the following file(s) should always result in the expected output:
-			- "data/sequence_no_match.txt"
+	* Set -s to any string-filled .txt file that doesn't follow a successful match naming pattern.
+		* For instance, the following file(s) should always result in the expected output:
+			* "data/sequence_no_match.txt"
 
 ## 4.3 "No data found" searches
 
