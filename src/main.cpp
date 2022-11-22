@@ -178,7 +178,7 @@ int main(int argc, char *argv[]) {
 
   // Iterates through each profile and searches for a match between it and the
   // profile that was generated in inputDna.
-  for (int ii = 0; ii < database.size(); ii++) {
+  for (int ii = 0; ii < (int)database.size(); ii++) {
     bool found = 0;
 		
     // database[ii].findProfile() returns a bool that indicates success or

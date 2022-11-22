@@ -54,7 +54,7 @@ void Sequence::generateProfile(map<int, string> map) {
 
     // Loops through the entire sequence (a string).
     // PT-BR:Loop para percorrer a sequência (string) inteira.
-    while (pos <= sequence.size()) {
+    while (pos <= (int)sequence.size()) {
 
       // If the STR type hasn't been found, increments pos by the length of the
       // STR type name. This is so that the code doesn't waste time looking
@@ -77,7 +77,7 @@ void Sequence::generateProfile(map<int, string> map) {
       // to zero. prevPos stores the previous value of pos.
       // PT-BR: Verifica se as posições são consecutivas; se não forem, count é
       // zerada. prevPos armazena o valor anterior de pos.
-      if (pos - prevPos > (str.size())) {
+      if (pos - prevPos > (int)(str.size())) {
         count = 0;
       }
 
